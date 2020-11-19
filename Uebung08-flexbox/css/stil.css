@@ -1,0 +1,207 @@
+
+html, body { /* hier werden die standartgesetzten Abstände für die ganze Seiten rausgelöscht*/
+    font-size: 110%;
+    line-height: 1.4;
+    padding: 0;
+    margin: 0;
+    font-family: 'Space Grotesk', sans-serif; /*diese Schriftart für alle Seiten und Bereiche*/
+    color: #273c75;
+}
+header {
+    background-image: url("../img/himmel.jpg"); /*so bindet man im ein Bild im CSS ein*/
+}
+nav ul {
+    max-width: 50%; /* Maximalbreite der Liste*/
+    margin: auto; /* die Liste wird zentriert*/
+    padding: 0; /* der Innenabstand, den alle UL haben wird entfernt*/
+    list-style: none; /* keine Aufzählungszeichen mit none */
+    display: flex; /* die Links werden nebeneinander gereiht*/
+    justify-content: space-between; /* der Leerraum wird ZWISCHEN den Items verteilt*/
+}
+nav li {
+    padding-top: 20px;
+}
+
+header nav a {
+    color: navy;
+    font-weight: bold;
+}
+
+nav a { /* a=anchor LINKS!*/
+    text-decoration: none; /* die Unterstreichung bei Links wird entfernt*/
+
+}
+.headerh1 {
+    display: flex;
+    justify-content: center; /* das Flexitem wird zentriert*/
+    color: white;
+    letter-spacing: 0.3em; /* der Zeichenabstand wird hier erhöht*/
+    font-family: 'Dancing Script', cursive; 
+    font-size: 200%; 
+    font-weight: bolder;
+}
+h2 {
+    text-align: center;
+}
+.flexcontainer1 {
+    display: flex;
+    flex-direction: row; /* Darstellung nebeneinander von links nach rechts */
+    align-items: stretch; /* die Elemente werden bei der Darstellung nebeneinander gleich hoch*/
+    justify-content: space-evenly; /* überrall ist der Leerraum gleich groß; Anfang+Ende+Dazwischen */
+}
+.flexitem1 {
+    padding: 2%;
+    text-align: center;
+    flex: 1;
+}
+.flexitem1 p {
+    padding: 10%;
+}
+.flexcontainer2 {
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: space-evenly;
+}
+.flexitem2 {
+    flex: 1; /* Die Items teilen sich den Platz gleich auf*/
+    padding: 1%;
+    margin: 2%;
+    text-align: center;
+    border: 1px solid rgb(114, 114, 114);
+    border-radius: 1rem; /*abgerundete Ecken beim Rahmen*/
+    box-shadow: 2px 2px 2px rgb(114, 114, 114);
+}
+.flexitem2 a {
+    color: navy;
+    font-weight: bold;
+    font-style: italic;
+}
+.bergcontainer {
+    display: flex;
+    justify-content: center;
+    padding: 40px;  
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(58,148,237,1) 50%, rgba(255,255,255,1) 100%);
+    margin-top: 40px;
+    margin-bottom: 40px;
+} 
+.bergitem {
+    padding: 1%;
+    margin: 2%;
+    transform: rotate(0);
+    transition: transform 3s ease;
+    border: 1px solid rgb(114, 114, 114);
+    border-radius: 1rem; /*abgerundete Ecken beim Rahmen*/
+    box-shadow: 2px 2px 2px rgb(114, 114, 114);
+    background-color: white;
+}
+.bergitem:hover {
+    transform: rotate(360deg);
+}
+.bergtext {
+    display: flex;
+    padding: 0.5rem 4rem 2rem;
+    justify-content: center;
+}
+.bergtext p {
+    text-align: center;
+}
+.bergzitat {
+    font-family: 'Dancing Script', cursive; 
+    font-size: 3rem;
+    text-align: center;
+}
+.seecontainer {
+    display: flex;
+    justify-content: center;
+    padding: 40px;  
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(58,148,237,1) 50%, rgba(255,255,255,1) 100%);
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.seeitem {
+    padding: 1%;
+    margin: 2%;
+    transform: rotate(0);
+    transition: transform 3s ease;
+    border: 1px solid rgb(114, 114, 114);
+    border-radius: 1rem; /*abgerundete Ecken beim Rahmen*/
+    box-shadow: 2px 2px 2px rgb(114, 114, 114);
+    background-color: white;  
+}
+.seeitem:hover {
+    transform: rotate(360deg);
+}
+.tablesee {
+    width: 50%;
+    padding-top: 0.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+#tablebeginn {
+    font-size: 1.4rem;
+    padding: 3%;
+    text-decoration-line: underline;
+}
+.seezitat {
+    font-family: 'Dancing Script', cursive; 
+    font-size: 3rem;
+    text-align: center;
+}
+.almcontainer {
+    display: flex;
+    justify-content: center;
+    padding: 40px;  
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(58,148,237,1) 50%, rgba(255,255,255,1) 100%);
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.almitem {
+    padding: 1%;
+    margin: 2%;
+    transform: rotate(0);
+    transition: transform 3s ease;
+    border: 1px solid rgb(114, 114, 114);
+    border-radius: 1rem; /*abgerundete Ecken beim Rahmen*/
+    box-shadow: 2px 2px 2px rgb(114, 114, 114);
+    background-color: white;
+}
+.almitem:hover {
+    transform: rotate(360deg);
+}
+.almzitat {
+    font-family: 'Dancing Script', cursive; 
+    font-size: 3rem;
+    text-align: center;
+}
+.almdlcontainer {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    padding: 0.5rem;
+}
+.almdlitem {
+    flex: 1;
+    
+    padding-left: 3rem;
+    padding-right: 3rem;
+    text-align: justify;
+}
+.almdlitem dt {
+    padding-bottom: 0.5rem;
+}
+footer {
+    height: 8em;
+    background-image: url("../img/gras.jpg");
+}
+.foot {
+    color: white;
+    display: flex;
+    justify-content: center;
+}
